@@ -1,0 +1,50 @@
+{
+  "pages": [
+    
+   
+    
+  
+   "pages/start/start",
+    "pages/bingxiang/bingxiang",
+    "pages/geren/message",
+    "pages/guanyu/guanyu",
+    "pages/shoujibangding/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "冰箱",
+        "pagePath": "pages/bingxiang/bingxiang",
+        "iconPath": "images/3.jpg",
+        "selectedIconPath": "images/3.jpg"
+      },
+      {
+        "pagePath": "pages/geren/message",
+        "text": "个人",
+        "iconPath": "images/geren.png",
+        "selectedIconPath": "images/geren2.png"
+      }
+    ]
+  },
+  "color": "#ffffff",
+  "selectedColor": "#000000",
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#000"
+  },
+   "usingComponents": {
+    "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index",
+    "van-row": "/miniprogram_npm/vant-weapp/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/col/index",
+    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-datetime-picker": "/miniprogram_npm/vant-weapp/datetime-picker/index",
+    "van-collapse": "/miniprogram_npm/vant-weapp/collapse/index",
+    "van-collapse-item": "/miniprogram_npm/vant-weapp/collapse-item/index",
+    "van-button": "/miniprogram_npm/vant-weapp/button/index"
+  
+  }
+}

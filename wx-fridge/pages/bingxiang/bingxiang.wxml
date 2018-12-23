@@ -1,0 +1,64 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="待食用">
+    <block wx:if="{{list[idx][0]!=495052494955}}"wx:for='{{list}}' wx:for-index='idx'>
+      <view class="lii">
+        <van-row>
+          <van-col span="12">{{list[idx][1]}}</van-col>
+          <van-col span="12">{{time[idx]}}</van-col>
+        </van-row>
+      </view>
+    </block>
+  </van-tab>
+  <van-tab title="详情">
+    <block wx:if="{{list[idx][0]!=495052494955}}"wx:for='{{list}}' wx:for-index='idx'>
+      <van-swipe-cell id="swipe-cell" right-width="{{ 100 }}" left-width="{{ 100 }}" bind:close="onClose" bind:close="setting">
+        <view slot="left" class='liiii' data-index='{{idx}}' bindtap='setting'>
+          <text space='nbsp'>          设置      </text>
+        </view>
+        <van-cell-group>
+          <view class="lii" data-index='{{idx}}' bindtap='changeToggle'>
+            <van-row>
+              <van-col span="22">{{list[idx][1]}}</van-col>
+              <van-col span="2" wx:if="{{list[idx][4]==0}}">
+                <van-icon name="clear" color="red"/></van-col>
+              <van-col span="2" wx:else>
+                <van-icon name="checked" color="green"/></van-col>
+            </van-row>
+            <view class="right">
+              <text class="iconfont {{selectedFlag[idx]?'icon-shangjiantou':'icon-xiala'}}"> </text>
+            </view>
+          </view>
+        </van-cell-group>
+        <view slot="right" class='liii' id='{{idx}}' bindtap='del'>
+          <text space='nbsp'>      删除          </text>
+        </view>
+      </van-swipe-cell>
+      <view hidden="{{!selectedFlag[idx]}}">
+        <block wx:for='{{list[idx]}}' wx:if="{{id !=2&&id!=4&&id!=1&&id!=5}}" wx:for-index='id'>
+          <view class="li bgcolor">
+            <view class="fontcolor">{{list[idx][id]}}</view>
+          </view>
+        </block>
+        <view class="li bgcolor">
+          <view class="fontcolor">{{time[idx]}}</view>
+        </view>
+      </view>
+      <view hidden="{{!settingFlag[idx]}}">
+        <van-collapse value="{{activeName[idx]}}" accordion data-key="activeName[{{idx}}]" bind:change='col'>
+          <van-collapse-item title="命名" name="1">
+            <form bindsubmit='sub' bindreset='rese' id="{{idx}}">
+              <input placeholder='Name' name="name" class='li' style='height:70rpx'></input>
+              <button class="left" form-type='submit' >确认</button>
+              <button class="right" form-type='reset' >取消</button>
+              <text class="white">hello</text>
+            </form>
+          </van-collapse-item>
+          <van-collapse-item title="定时" name="2">
+            <van-datetime-picker type="datetime" id='{{idx}}' value="{{ currentDate }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" bind:confirm="onChanges"bind:cancel="close" />
+          </van-collapse-item>
+        </van-collapse>
+       <button class="button"bindtap="close2">返回</button>
+      </view>
+    </block>
+  </van-tab>
+</van-tabs>

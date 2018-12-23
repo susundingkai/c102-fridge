@@ -1,0 +1,76 @@
+/* 列表详情 */
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.lii {
+  background-color: #fff;
+  justify-content: space-between;
+  font-size: 34rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.liii {
+  background-color: rgb(255, 0, 0);
+  justify-content: space-between;
+  font-size: 35rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color:white;
+}
+.bgcolor{
+    background-color: rgb(255, 255, 255)!important;
+    border-bottom: 1rpx solid  rgb(238, 238, 238)!important;
+}
+
+.li .icon-xiala ,.icon-shangjiantou {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.grey {
+  color: #8e8e8e;
+}
+
+.red {
+  color: #fe2e2e;
+}
+.liiii {
+  background-color: rgb(18, 102, 22);
+  justify-content: space-between;
+  font-size: 35rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color:white;
+}
+.left{
+  width: 49%; 
+  
+  float:left;
+}
+.right{
+  width: 49%; 
+  
+  float:right;
+}
+.white{
+  color:white;
+}
+.fontcolor{
+  color:rgb(0, 0, 0);
+}
+.button{
+  width:98%;
+  border:1px solid green;
+  color:green;
+}

@@ -1,0 +1,32 @@
+<!--pages/guanyu/guanyu.wxml-->
+<view class="title">
+<text class="blue">hello</text>
+</view>
+<view class="title">
+<text space='nbsp'>使 用 说 明</text>
+</view>
+<view class="title">
+<text class="blue">hello</text>
+</view>
+<view class="wordss">
+<text space='nbsp'>hello</text>
+</view>
+<view class="words">
+<text space='nbsp'>● 在主界面点击“详情”可查看冰箱内物品的详细信息:</text>
+</view>
+<view class="words">
+<text space='nbsp'>▪ 当物品被移出冰箱时，显示框右端的圆形图标会变为</text><van-icon name="clear" color="red"/><text>；</text>
+</view>
+<view class="words">
+<text space='nbsp'>▪ 向左滑动显示框可将物品删除；</text>
+</view>
+<view class="words">
+<text space='nbsp'>▪ 新物品放入冰箱后默认名称为“null”,向右滑动显示框点击“设置”可对物品进行命名或定时；</text>
+</view>
+<view class="words">
+<text space='nbsp'>● 在个人界面可进行手机绑定，我们会向您输入的手机号发送短信提示您设定时间已到；</text>
+</view>
+<view class="words">
+<text space='nbsp'>● 如在使用过程中遇到问题，请联系我们：000-000；</text>
+</view>
+<text class="copyright">北邮c-102出品</text>

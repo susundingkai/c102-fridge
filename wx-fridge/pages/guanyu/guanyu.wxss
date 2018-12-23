@@ -1,0 +1,28 @@
+/* pages/guanyu/guanyu.wxss */
+.title{
+  background-color: rgb(51,102,153);
+  text-align: center;
+  color:white;
+  font-size:50rpx;
+}
+.blue{
+  color: rgb(51,102,153);
+}
+.words{
+  font-size:40rpx;
+  width:88%;
+  margin:auto;
+}
+.wordss{
+  color:rgb(238, 238, 238);
+}
+.copyright {
+  font-size: 28rpx;
+  color: #999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  text-align: center;
+}

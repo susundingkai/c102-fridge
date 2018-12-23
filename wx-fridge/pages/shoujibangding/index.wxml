@@ -1,0 +1,22 @@
+<view class="text">
+<text>hello</text>
+</view>
+<view class="text">
+<text>hello</text>
+</view>
+<view class="center">
+<text>请输入您的手机号和姓名</text>
+</view>
+<view class="text">
+<text>hello</text>
+</view>
+<view class="text">
+<text>hello</text>
+</view>
+<view class="form">
+<form bindsubmit='confirms'>
+   <input placeholder='Phone' name="phone" class='li' style='height:70rpx'></input>
+   <input placeholder='Name' name="name" class='li' style='height:70rpx'></input>
+  <button form-type='submit' type='primary'>确认</button>
+</form>
+</view>

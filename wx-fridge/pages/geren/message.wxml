@@ -1,0 +1,18 @@
+<view class="container">
+
+  <view class="header">
+
+  
+    <view class='banner'><open-data type="userAvatarUrl"></open-data></view>
+    <view class='td'><open-data type="userNickName"></open-data></view>
+
+	</view>
+
+<van-cell-group>
+
+ <navigator url='/pages/shoujibangding/index'> <van-cell title="手机绑定" icon="phone" is-link /></navigator>
+   <navigator url='/pages/guanyu/guanyu'><van-cell title="帮助与反馈" icon="question" is-link /></navigator>
+     <van-cell title="分享" icon="share" is-link bindtap="previewImage"/>
+
+</van-cell-group>
+</view>
